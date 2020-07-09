@@ -15,6 +15,15 @@ while True:
 	if tokens[0] == 'q' or tokens[0] == 'quit':
 		break
 
+	if len(tokens) > 3:
+		tokens[0] = tokens[0]
+		num1 = tokens[1]
+		num2 = tokens[2]
+
+	if len(tokens) < 3:
+		tokens[0] = tokens[0]
+		num1 = tokens[1]	
+
 	if tokens[0] == '+':
 		print(add(int(tokens[1]), int(tokens[2])))
 
