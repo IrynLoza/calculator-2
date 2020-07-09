@@ -6,36 +6,36 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 
 # Replace this with your code
 
-#??? do while NOT function??? 
+while True:
 
-def tokenization(input_string):
+	input_string = input('Enter your equation > ')
 		
 	tokens = input_string.split(' ')
 
-		if tokens[0] == 'add':
-			return add(int(tokens[1]), int(tokens[2]))
+	if tokens[0] == '+':
+		print(add(int(tokens[1]), int(tokens[2])))
 
-		elif tokens[0] == 'subtract':
-			return subtract(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == '-':
+		print(subtract(int(tokens[1]), int(tokens[2])))
 
-		elif tokens[0] == 'multiply':
-			return multiply(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == '*':
+		print(multiply(int(tokens[1]), int(tokens[2])))
 
-		elif tokens[0] == 'divide':
-			return divide(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == '/':
+		print(divide(int(tokens[1]), int(tokens[2])))
 
-		elif tokens[0] == 'square':
-			return square(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == 'square':
+		print(square(int(tokens[1])))
 
-		elif tokens[0] == 'cube':
-			return cube(int(tokens[1]), int(tokens[2]))		 			
+	elif tokens[0] == 'cube':
+		print(cube(int(tokens[1])))		 			
 
-		elif tokens[0] == 'pow':
-			return power(int(tokens[1]), int(tokens[2]))
+	elif tokens[0] == 'pow':
+		print(power(int(tokens[1]), int(tokens[2])))
 
-		elif tokens[0] == 'mod':
-			return mod(int(tokens[1]), int([tokens[2]]))		
+	elif tokens[0] == 'mod':
+		print(mod(int(tokens[1]), int([tokens[2]])))
 
 
-print(tokenization(input('Enter your equation > ')))
+
 
