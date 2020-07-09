@@ -6,6 +6,7 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 
 # Replace this with your code
 def	tokenization(input_string):
+	"""Tokenize inputs for arithmetic operations"""
 
 	tokens = input_string.split(' ')
 
