@@ -12,6 +12,9 @@ while True:
 		
 	tokens = input_string.split(' ')
 
+	if tokens[0] == 'q' or tokens[0] == 'quit':
+		break
+
 	if tokens[0] == '+':
 		print(add(int(tokens[1]), int(tokens[2])))
 
